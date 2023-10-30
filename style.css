@@ -1,0 +1,133 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(30, 38%, 92%);
+}
+.outer {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.box {
+  display: flex;
+  width: 530px;
+  border-radius: 30px;
+}
+.dsk-img {
+  background-image: url(images/image-product-desktop.jpg);
+  width: 265px;
+  border-radius: 10px 0  0 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.text {
+  background-color: hsl(0, 0%, 100%);
+  width: 265px;
+  padding: 25px;
+  border-radius: 0 10px 10px 0;
+}
+.text .per {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 15px;
+  font-family: 'Montserrat';
+}
+.text h2 {
+  display: block;
+  font-size: 2em;
+  font-family: 'Fraunces', serif;
+  font-weight: bold;
+}
+.text p {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 30px;
+  color: hsl(228, 12%, 48%)
+}
+.price {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.price .b {
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+  margin-right: 15px;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+.price .s {
+  font-size: 0.9rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.button {
+  background-color: hsl(158, 36%, 37%);
+  text-align: center;;
+  cursor: pointer;
+  padding: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.t {
+  color: white;
+}
+
+@media (max-width: 375px) {
+    
+  .box {
+      flex-direction: column;
+      width: 350px;
+      margin-top: 50px;
+  }
+
+  .dsk-img {
+      display: flex;
+      width: 350px;
+      height: 250px;
+      background-image: url(images/image-product-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-radius: 10px 10px 0 0;
+  }
+
+  .text {
+      width: 350px;
+      border-radius: 0 0 10px 10px;
+  }
+
+  .attribution {
+      margin-top: 30px;
+  }
+}
+  /*media (min-width: 992px) {
+    .mob-img{
+      visibility: hidden;
+      width: 0%;
+    }
+    .dsk-img{
+      visibility: visible;
+      width: 50%;
+    }
+    .outer{
+      flex-direction: row;
+      width: 50%;
+      height: 50%;
+    }
+    .text{
+      width: 50%;
+      align-items: stretch;
+    }
+  }*/
